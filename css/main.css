@@ -1,0 +1,109 @@
+/* Global ========= */
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+}
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+button {
+    font-family: "Domine",serif;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding: 1em 2em;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: var(--smooth);
+}
+button:hover {
+    color: var(--orange);
+    background-color: var(--light-pink);
+    transition: var(--smooth);
+
+}
+:root {
+    --orange: #fa5652;
+    --green: #035755;
+    --gray: #4b4f51;
+    --pink: #fee6e5;
+    --light-pink: #fff9f9;
+    --smooth: all 0.3s ease-in;
+    --shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  }
+  header {
+    background-color: var(--light-pink);
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 55px 15px;
+    background-color: var(--light-pink);
+  }
+  .navbar__logo {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__logo img {
+    width: 63px;
+  }
+  .navbar__logo p {
+    font-family: 'Red Hat Display', serif;
+    font-size: 1.125rem;
+    margin-left: 14px;
+    color: var(--green);
+    text-transform: uppercase;
+  }
+  .navbar__links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    /* transform: translateY(-100%); */
+    background-color: var(--orange);
+    /* opacity: 0; */
+    z-index: 5;
+    transition: var(--smooth);
+  }
+  .navbar__link {
+    list-style: none;
+    font-size: 1.125rem;
+    margin: 55px;
+  }
+  .navbar__link a {
+    color: white;
+    font-family: 'Domine',serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: var(--smooth);
+  }
+  .navbar__link a:hover {
+    color: var(--green);
+    transition: var(--smooth);
+  }
+  .navbar__btn {
+    font-size: 1.125rem;
+    margin-left: 35px;
+    border: 1px solid var(--pink);
+  }
+
